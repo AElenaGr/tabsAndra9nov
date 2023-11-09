@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de QRs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="logo.png" alt="Logo de HTML" class="logo">
+            <h1 class="title">Patrimonio Nacional</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Editor de QRs</h1>
+        <div class="tabs">
+            <label class="tab" for="url" data-target="url-content">URL</label>
+            <label class="tab" for="geoloc" data-target="geoloc-content">Geolocalización</label>
+            <label class="tab" for="email" data-target="email-content">Email</label>
+            <label class="tab" for="size" data-target="size-content">Tamaño</label>
+            <label class="tab" for="qr" data-target="qr-content">QR</label>
+        </div>
+        
+
+        <div class="tab-content" id="url-content">
+            <div class="content-container">
+                <label for="url-input">Escribir URL</label>
+                <input type="text" id="url-input" placeholder="Introduce la URL">
+                <button id="url-accept">Aceptar</button>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="geoloc-content">
+            <div class="content-container">
+                <label for="geoloc-input">Escribir Geolocalización</label>
+                <input type="text" id="geoloc-input" placeholder="Introduce la geolocalización">
+                <button id="geoloc-accept">Aceptar</button>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="email-content">
+            <div class="content-container">
+                <label for="email-input">Escribir Email</label>
+                <input type="text" id="email-input" placeholder="Introduce el correo electrónico">
+                <button id="email-accept">Aceptar</button>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="size-content">
+            <div class="content-container">
+                <label for="size-input">Seleccionar Tamaño</label>
+                <select id="size-input">
+                    <option value="pequeno">Pequeño</option>
+                    <option value="mediano">Mediano</option>
+                    <option value="grande">Grande</option>
+                </select>
+                <button id="size-accept">Aceptar</button>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="qr-content">
+            <div class="content-container">
+                <img src="qr1.png" alt="Imagen QR" id="qr-image">
+                <button id="edit-qr">Editar QR</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy AEG</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

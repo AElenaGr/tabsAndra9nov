@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('123.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: antiquewhite; /* Color de fondo si la imagen no se carga */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Resto de tu CSS */
+
+.logo {
+    width: 100px; /* Tamaño ajustable, modifica el valor a tu preferencia */
+}
+/* Resto de tu CSS */
+
+img.logo {
+    width: 100px;
+    border: none; /* Elimina el borde alrededor del logo */
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #f4f4f4;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:300%;
+}
+
+.tabs {
+    display: flex;
+    color: #0056b3;
+    border-radius: 50%;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid #d24242;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    background-color: #751414;
+    display: flex;
+    margin-top: 20px;
+}
+
+.tab:last-child {
+    border-bottom: 1px solid #884d4d;
+}
+.logo {
+    width: 100px; 
+}
+
+
+.tab-content{
+    padding: 10%;
+
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las tabs */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tab {
+    display: block; /* Ahora las tabs serán elementos en bloque */
+    cursor: pointer;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    background-color: #f4f4f4;
+    width: 100%; /* Las tabs ocuparán todo el ancho disponible */
+    text-align: center; /* Centra el texto dentro de cada tab */
+    box-sizing: border-box; /* El padding y border no añadirán al ancho total */
+}
+
+.tab:not(:last-child) {
+    margin-right: 5px; /* Espacio entre las tabs, excepto la última */
+}
+
+
+
+#qr-image {
+    max-width: 150px; /* Cambia el valor según el tamaño deseado */
+    width: 100%; /* Asegura que la imagen no exceda el ancho máximo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+button#edit-qr {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#edit-qr:hover {
+    background-color: #0056b3;
+    border: none;
+}
+
+.qr-image img {
+    max-width: 80px; 
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none; 
+    padding: 10px;
+}
+
+.tab-content {
+    background-color: #0080ff;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 2em;
+    background: linear-gradient(to right, rgb(218, 82, 218),   rgb(255, 255, 150), rgb(0, 102, 255), rgb(117, 92, 243));
+}
+.tab.focused {
+    background-color: rgb(115, 115, 242);
+    color: white;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #0056b3;
+}
